@@ -4,11 +4,9 @@ import { IMsGraphGroupsProps } from './IMsGraphGroupsProps';
 import { IMsGraphGroupsState } from './IMsGraphGroupsState';
 import { escape } from '@microsoft/sp-lodash-subset';
 import * as MicrosoftGraph from '@microsoft/microsoft-graph-types';
-import { Environment, EnvironmentType } from '@microsoft/sp-core-library';
 import { List } from 'office-ui-fabric-react/lib/List';
 
 export default class MsGraphGroups extends React.Component<IMsGraphGroupsProps, IMsGraphGroupsState> {
-  private readonly useSampleData: boolean = true;
   constructor(props: IMsGraphGroupsProps) {
     super(props);
 
