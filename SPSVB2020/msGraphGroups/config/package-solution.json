@@ -1,0 +1,19 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "MS Graph My Groups Demo",
+    "id": "98759ed5-cca0-4129-b281-1a56be5c0c93",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [{
+        "resource": "Microsoft Graph",
+        "scope": "Directory.Read.All"
+      }
+    ],
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/msGraph-myGroups-demo.sppkg"
+  }
+}
