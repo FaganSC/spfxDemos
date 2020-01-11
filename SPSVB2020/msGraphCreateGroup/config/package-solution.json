@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "MS Graph Create Group Demo",
+    "id": "e4d3269e-402a-4d8e-9f18-7d6c9be86c6b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "webApiPermissionRequests": [{
+      "resource": "Microsoft Graph",
+      "scope": "Directory.ReadWrite.All"
+    }],
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/msGraph-createGroups-demo.sppkg"
+  }
+}

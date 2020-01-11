@@ -7,3 +7,5 @@ Coming Soon
 [Microsoft Graph Web Part to display current users groups](https://github.com/FaganSC/spfxDemos/tree/master/SPSVB2020/msGraphGroups)
 ![SharePoint Framework v.1.10.0](https://img.shields.io/badge/spfx-1.10.0-blue?style=flat-square "SharePoint Framework v.1.10.0")
 
+[Microsoft Graph Web Part to create a group](https://github.com/FaganSC/spfxDemos/tree/master/SPSVB2020/msGraphCreateGroup)
+![SharePoint Framework v.1.10.0](https://img.shields.io/badge/spfx-1.10.0-blue?style=flat-square "SharePoint Framework v.1.10.0")
