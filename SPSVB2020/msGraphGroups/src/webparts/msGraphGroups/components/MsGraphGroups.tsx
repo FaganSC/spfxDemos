@@ -18,7 +18,7 @@ export default class MsGraphGroups extends React.Component<IMsGraphGroupsProps, 
   public componentDidMount(): void {
     this.props.graphClient
       .api('/me/memberOf')
-      .select("displayName,description,groupTypes")
+      .select("displayName,description,mail,groupTypes,visibility")
       .get((error: any, graphResponse: any, rawResponse?: any) => {
         const myGroups: MicrosoftGraph.Group[] = graphResponse.value;
         console.log('MyGroups:', myGroups);
@@ -29,8 +29,8 @@ export default class MsGraphGroups extends React.Component<IMsGraphGroupsProps, 
   private _onRenderEventCell(item: MicrosoftGraph.Group, index: number | undefined): JSX.Element {
     return (
       <div>
-        <h3>{item.displayName}</h3>
-        <h4>{item.description}</h4>
+        <h3>{item.displayName} ({item.mail})</h3>
+        <p>{item.description}</p>
       </div>
     );
   }
